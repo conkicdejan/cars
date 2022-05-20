@@ -5,8 +5,10 @@
 @endsection
 
 @section('content')
-    <h1>{{ $car->producer }}</h1>
-    <p>{{ $car->created_at }}</p>
-    <p>{{ $car->title }}</p>
+    <div class='container'>
+        <h1>{{ $car->producer }}</h1>
+        <p>{{ $car->title }}</p>
+        <p class='badge'>{{ $car->created_at }}</p>
+    </div>
 @endsection
 

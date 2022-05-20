@@ -19,12 +19,10 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     </head>
-    <nav>
-        <a href="/cars">Cars</a>
-        <a href="/about">About</a>
-    </nav>
-    <body class="antialiased">
+        @include('includes.navbar')
+    <body>
         @yield('content')
     </body>
-    </html>
+</html>

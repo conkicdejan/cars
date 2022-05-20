@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('producer');
-            $table->integer('number_if_doors');
+            $table->integer('number_of_doors');
             $table->timestamps();
         });
     }
