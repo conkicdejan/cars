@@ -21,15 +21,8 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1>Cars</h1>
-        <ul>
-            @foreach ($cars as $car)
-            <li>
-                <a href="/cars/{{ $car->id }}">
-                    {{ $car->producer }} - {{ $car->title }}
-                </a>
-            </li>
-            @endforeach
-        </ul>
+        <h1>{{ $car->producer }}</h1>
+        <p>{{ $car->created_at }}</p>
+        <p>{{ $car->title }}</p>
     </body>
 </html>
